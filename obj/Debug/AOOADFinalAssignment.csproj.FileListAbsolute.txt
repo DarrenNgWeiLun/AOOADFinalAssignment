@@ -1,0 +1,7 @@
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe.config
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.pdb
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csprojResolveAssemblyReference.cache
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csproj.CoreCompileInputs.cache
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.exe
+c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.pdb
