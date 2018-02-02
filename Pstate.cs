@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace AOOADFinalAssignment
 {
-    class PartialPayOut:PayOutType
+    interface Pstate
     {
-        public void payOut()
-        {
-            Console.WriteLine("Generate Partial Pay out");
-        }
+        void payPremium();
+        void setToLapsed();
+        void custTerminate();
+        void agentTerminate();
+        void payOut();
     }
 }

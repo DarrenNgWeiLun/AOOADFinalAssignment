@@ -8,5 +8,9 @@ namespace AOOADFinalAssignment
 {
     class Travel:Policy
     {
+        public Travel()
+        {
+            PayOutType = new NormalPayOut();
+        }
     }
 }

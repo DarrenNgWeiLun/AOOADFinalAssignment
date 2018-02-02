@@ -10,7 +10,7 @@ namespace AOOADFinalAssignment
     {
         public void payOut()
         {
-
+            Console.WriteLine("Generate Maturity Payout");
         }
     }
 }

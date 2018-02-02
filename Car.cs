@@ -8,5 +8,11 @@ namespace AOOADFinalAssignment
 {
     class Car:Policy
     {
+        public Car()
+        {
+
+
+            PayOutType = new NormalPayOut();
+        }
     }
 }

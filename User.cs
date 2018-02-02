@@ -8,9 +8,9 @@ namespace AOOADFinalAssignment
 {
     class User
     {
-        private int userID;
-        private string name;
 
+        public int UserID { get; set; }
+        public string Name { get; set; }
         public void viewPolicy()
         {
 

@@ -8,5 +8,9 @@ namespace AOOADFinalAssignment
 {
     class Medical:Policy
     {
+        public Medical()
+        {
+            PayOutType = new PartialPayOut();
+        }
     }
 }
