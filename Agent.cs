@@ -8,9 +8,9 @@ namespace AOOADFinalAssignment
 {
     class Agent:User
     {
-        private int noOfPoliciesSold;
-        private double totalComission;
-        public List<Policy> PolicyList { get; set; }
+        private int noOfPoliciesSold; // number of policies sold
+        private double totalComission; // the total Comission earned by the agent
+        public List<Policy> PolicyList { get; set; } // the list of policies that the agent owns.
 
         public Agent()
         {

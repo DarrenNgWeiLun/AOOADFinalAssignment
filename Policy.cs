@@ -9,18 +9,18 @@ namespace AOOADFinalAssignment
     class Policy
     {
 
-        public int PolicyNum { get; set; }
+        public int PolicyNum { get; set; } // the policy ID
         public string TermsAndConditions { get; set; }
         public DateTime ExpiryDate { get; set; }
-        public double Comission { get; set; }
+        public double Comission { get; set; } // the comssion that each Agent will earn upon selling of this policy
         public double TotalPremiumCost { get; set; }
-        public bool Paid { set; get; }
+        public bool Paid { set; get; } // check if the policy has been paid or not
         public double CancellationFee { get; set; }
-        public List<Rider> RiderList { get; set; }
-        public Client C { get; set; }
-        public Agent A { get; set; }
-        public Receipt R { get; set; }
-        public PayOutType PayOutType { get; set; }
+        public List<Rider> RiderList { get; set; } // this is the list of riders that the policy has
+        public Client C { get; set; } // The client who owns this policy
+        public Agent A { get; set; } // the Agent who has this policy
+        public Receipt R { get; set; } // the receipt
+        public PayOutType PayOutType { get; set; } // the payout type
         public Pstate State { get; set; }
 
         public Pstate activeState { get; set; }

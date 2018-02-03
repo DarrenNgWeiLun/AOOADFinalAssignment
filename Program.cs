@@ -30,6 +30,10 @@ namespace AOOADFinalAssignment
                     sampleAgent.createNewPolicy();
                     Console.ReadLine();
                 }
+                else if (Convert.ToInt32(Console.ReadLine()) == 3)
+                {
+                    sampleAgent.viewPolicy();
+                }
             }
             else if (option == "CLIENT")
             {
