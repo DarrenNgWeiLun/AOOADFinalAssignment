@@ -137,16 +137,17 @@ namespace AOOADFinalAssignment
 
                                             //Inform the user that the system has ackonowledged that the premiunms has been paid by cheque
                                             Console.WriteLine("The system has successfully recorded that the premiums are paid by cheque");
-                                            Console.WriteLine("Redirecting you to the main menu...");
-                                            Main();
+                                            
                          
                                         }
                                         else if (userInputChoice == "No")
                                         {
                                             Console.WriteLine("Policy has been updated successfully!");
-                                            Console.WriteLine("Bringing you back to the menu...");
-                                            Main();
                                         }
+
+                                        // Lijun's 2nd use case - "Generate Payment Due Alert"
+                                        Console.WriteLine("")
+
 
                                     }
                                 }
