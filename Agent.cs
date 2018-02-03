@@ -130,21 +130,19 @@ namespace AOOADFinalAssignment
                 Console.WriteLine("Name of Client: " + p.C.Name);
                 Console.WriteLine("Terms and Condition: " + p.TermsAndConditions);
                 Console.WriteLine("Expiry Date: " + p.ExpiryDate);
+                Console.WriteLine("Type of Policy: " + p, GetType());
                 Console.WriteLine("{0,10}{1,20}{2,20}{3,30}", "Rider Index", "Rider Premium", "Rider Payout", "Premium Type");
                 for (int i = 0; i < p.RiderList.Count; i++)
                 {
                     Console.WriteLine("{0,10}{1,20}{2,20}{3,30}", (i + 1), p.RiderList[i].PremiumCost, p.RiderList[i].PayOutAmount, p.RiderList[i].PremiumType);
                 }
 
-
-                this.addNewPolicy(p);
+                PolicyList.Add(p);
+                Console.WriteLine("Policy added.");
+                
             }
             }
-        public void addNewPolicy(Policy p)
-        {
-            PolicyList.Add(p);
-            Console.WriteLine("Policy added.");
-        }
+        
         public void registerCustomer()
         {
 
