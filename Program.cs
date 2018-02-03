@@ -19,12 +19,13 @@ namespace AOOADFinalAssignment
                 Console.WriteLine("Logged in as Agent");
                 Agent sampleAgent = new Agent();
                 Console.WriteLine("=====================Agent Functions================");
-                Console.WriteLine("1. Create New Policy (Darren)");
-                Console.WriteLine("2. Edit Policy (Haiqel)");
-                Console.WriteLine("3. Send Email Alerts for policies with premium due (LiJun)");
+                Console.WriteLine("1. View Policies (Lijun)");
+                Console.WriteLine("2. Create New Policy (Darren)");
+                Console.WriteLine("3. Edit Policy (Haiqel)");
+                Console.WriteLine("4. Send Email Alerts for policies with premium due (LiJun)");
 
 
-                if (Convert.ToInt32(Console.ReadLine()) == 1)
+                if (Convert.ToInt32(Console.ReadLine()) == 2)
                 {
                     sampleAgent.createNewPolicy();
                     Console.ReadLine();
