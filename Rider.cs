@@ -8,6 +8,7 @@ namespace AOOADFinalAssignment
 {
     class Rider
     {
+        //private attributes
         private int riderID;
         private double premiumCost;
         private string premiumType;
@@ -15,6 +16,7 @@ namespace AOOADFinalAssignment
         private double interestForLatePayment;
         private Policy policy;
 
+        //getter and setters
         public int RiderID { get; set; }
         public double PremiumCost { get; set; }
         public string PremiumType { get; set; }
@@ -22,6 +24,14 @@ namespace AOOADFinalAssignment
         public double InterestForLatePayment { get; set; }
         public Policy p { get; set; }
 
-        
+        // Constructor
+        public Rider(int riderID,double premiumCost,string premiumType, double payOutAmount,double interestForLatePayment)
+        {
+            this.riderID = riderID;
+            this.premiumCost = premiumCost;
+            this.premiumType = premiumType;
+            this.payOutAmount = payOutAmount;
+            this.interestForLatePayment = interestForLatePayment;
+        }
     }
 }
