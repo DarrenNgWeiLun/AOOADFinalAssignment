@@ -5,3 +5,9 @@ c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\
 c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csproj.CoreCompileInputs.cache
 c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.exe
 c:\users\darre\source\repos\AOOADFinalAssignment\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.pdb
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.exe
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.pdb
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe.config
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe
+C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.pdb

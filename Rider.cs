@@ -22,8 +22,10 @@ namespace AOOADFinalAssignment
         public string PremiumType { get; set; }
         public double PayOutAmount { get; set; }
         public double InterestForLatePayment { get; set; }
-        public Policy p { get; set; }
+        public Policy Policy { get; set; }
 
+        //default constructor
+        public Rider() { }
         // Constructor
         public Rider(int riderID,double premiumCost,string premiumType, double payOutAmount,double interestForLatePayment)
         {

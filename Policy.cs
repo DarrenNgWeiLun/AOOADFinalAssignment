@@ -8,7 +8,16 @@ namespace AOOADFinalAssignment
 {
     class Policy
     {
+        // private attributes
+        private int policyNum;
+        private string termsAndConditions;
+        private DateTime expiryDate;
+        private double comission;
+        private double totalPremiumCost;
+        private bool paid;
+        private double cancellationFee;
 
+        //public attributes
         public int PolicyNum { get; set; } // the policy ID
         public string TermsAndConditions { get; set; }
         public DateTime ExpiryDate { get; set; }
@@ -47,9 +56,11 @@ namespace AOOADFinalAssignment
             PayOutType.payOut();
             this.State.payOut();
         }
-        public void editPolicy()
-        {
 
+        // Haiqel's Use Case
+        public void editPolicy(List<Rider> riderList, List<Rider> globalRiderList, int selectedRiderID)
+        {
+            riderList.Add(globalRiderList[selectedRiderID - 1]);
         }
         public void sendAlert()
         {

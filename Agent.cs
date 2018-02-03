@@ -29,7 +29,6 @@ namespace AOOADFinalAssignment
                 string tac = Console.ReadLine();
 
 
-
                 Console.WriteLine("Please enter Premium Cost $: ");
                 double premiumCost = Convert.ToDouble(Console.ReadLine());
                 r.PremiumCost = premiumCost;

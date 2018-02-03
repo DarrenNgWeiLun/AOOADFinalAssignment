@@ -30,13 +30,14 @@ namespace AOOADFinalAssignment
                 Console.WriteLine("=====================Agent Functions================");
                 Console.WriteLine("1. View Policies (Lijun)");
                 Console.WriteLine("2. Create New Policy (Darren)");
-                Console.WriteLine("3. Edit Policy (Haiqel)");
                 Console.WriteLine("4. Send Email Alerts for policies with premium due (LiJun)");
 
                 if (Convert.ToInt32(Console.ReadLine()) == 1)
                 {
                     while (true)
                     {
+                        // Lijun's Use Case - View Policies 
+
                         // attrbiutes
                         int policyNum; // the policy that the agent wants to see/edit
                         List<Policy> policiesOwned = sampleAgent.PolicyList;
@@ -69,6 +70,10 @@ namespace AOOADFinalAssignment
                             // behaviour
                             // Haiqel's Use Case - Edit Policy Starts here
 
+                            //display the column data headers first
+                            Console.WriteLine("These are the riders that this policy has at the moment!");
+                            Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
+
                             // display a list of riders that the policy has
                             for (int i = 0; i < riderList.Count(); i++)
                             {
@@ -82,7 +87,57 @@ namespace AOOADFinalAssignment
 
                             if (userInput1 == "Yes")
                             {
-                                
+                                while (true)
+                                {
+                                    //local attribute
+                                    int selectedRiderID; // the user to choose the riderID to be added
+                                    string userInputChoice; // Yes or No;
+                                                            //behaviour
+
+                                    //display the available riders that can be added to the policy viewed
+                                    Console.WriteLine("These are the riders that are avaible to be added!");
+                                    Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
+                                    for (int i = 0; i < riderList.Count(); i++)
+                                    {
+                                        Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", globalRiderList[i].RiderID, globalRiderList[i].PremiumCost, globalRiderList[i].PremiumType,
+                                            globalRiderList[i].PayOutAmount);
+                                    }
+
+                                    //Prompt the user for the riderID to be added.
+                                    Console.Write("Please enter the riderID to be added to this policy!");
+                                    selectedRiderID = Convert.ToInt16(Console.ReadLine());
+
+                                    policiesOwned[policyNum - 1].editPolicy(riderList, globalRiderList, selectedRiderID);
+                                    Console.WriteLine("Rider has been added successfully!");
+                                    Console.WriteLine("Do you wish to add any additional riders?");
+                                    Console.Write("Yes/No : ");
+                                    userInputChoice = Console.ReadLine();
+                                    if (userInputChoice == "Yes")
+                                    {
+                                        continue;
+                                    }
+                                    else if (userInputChoice == "No")
+                                    {
+                                        //local variables
+                                        
+                                        //behaviour
+                                        Console.WriteLine("Do you want to pay the premiums by cheque (if given by the client)?");
+                                        Console.Write("Yes/No : ");
+                                        userInputChoice = Console.ReadLine();
+
+                                        if (userInputChoice == "Yes")
+                                        {
+                                            // do later
+                                        }
+                                        else if (userInputChoice == "No")
+                                        {
+                                            Console.WriteLine("Policy has been updated successfully!");
+                                            Console.WriteLine("Bringing you back to the menu...");
+                                            Main();
+                                        }
+
+                                    }
+                                }
                             }
 
                         }
