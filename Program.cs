@@ -28,9 +28,9 @@ namespace AOOADFinalAssignment
                 Console.WriteLine("Logged in as Agent");
                 Agent sampleAgent = new Agent();
                 Console.WriteLine("=====================Agent Functions================");
-                Console.WriteLine("1. View Policies (Lijun)");
+                Console.WriteLine("1. View Policies (Lijun) + Edit Policy (Haiqel) + Pay Premium By Cheque (Haiqel) + Send Email Alert for policies with premium due (LiJun)");
                 Console.WriteLine("2. Create New Policy (Darren)");
-                Console.WriteLine("4. Send Email Alerts for policies with premium due (LiJun)");
+                Console.WriteLine("Note : Haiqel's Use Cases 'Edit Policy' and 'Pay Premium by cheque' codes are embedded inside 'Lijun code'");
 
                 if (Convert.ToInt32(Console.ReadLine()) == 1)
                 {
@@ -121,13 +121,25 @@ namespace AOOADFinalAssignment
                                         //local variables
                                         
                                         //behaviour
+                                        // Haiqel's 2nd Use Case 'Pay Premium By Cheque".
                                         Console.WriteLine("Do you want to pay the premiums by cheque (if given by the client)?");
                                         Console.Write("Yes/No : ");
                                         userInputChoice = Console.ReadLine();
 
                                         if (userInputChoice == "Yes")
                                         {
-                                            // do later
+                                            Console.WriteLine("Do you have the cheque given by the client for the payment?");
+                                            Console.Write("Yes/No : ");
+                                            userInputChoice = Console.ReadLine();
+
+                                            // Make the policy state from whatever state to active state.
+                                            policiesOwned[policyNum - 1].setState(policiesOwned[policyNum].activeState);
+
+                                            //Inform the user that the system has ackonowledged that the premiunms has been paid by cheque
+                                            Console.WriteLine("The system has successfully recorded that the premiums are paid by cheque");
+                                            Console.WriteLine("Redirecting you to the main menu...");
+                                            Main();
+                         
                                         }
                                         else if (userInputChoice == "No")
                                         {
