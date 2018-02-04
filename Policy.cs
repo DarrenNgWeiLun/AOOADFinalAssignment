@@ -64,7 +64,28 @@ namespace AOOADFinalAssignment
         }
         public void sendAlert()
         {
-
+            if (this.State == this.activeState)
+            {
+                Console.WriteLine("Payment is made and there are no payments due!");
+                Console.WriteLine("Bringing you back to the menu.....");
+            }
+            else if (this.State == this.lapsedState)
+            {
+                // local attribute
+                string choice;
+                Console.Write("Do you want alert by email or letter? (email/letter) : ");
+                choice = Console.ReadLine();
+                if (choice == "email")
+                {
+                    Console.WriteLine("Client will be informed through email");
+                    Console.WriteLine("Bringing you back to the menu......");
+                }
+                else if (choice == "letter")
+                {
+                    Console.WriteLine("CLient will be informed through an alert letter");
+                    Console.WriteLine("Bringing you back to the menu......");
+                }
+            }
         }
         public void payPremium()
         {

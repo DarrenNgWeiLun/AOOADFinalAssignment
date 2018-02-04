@@ -146,9 +146,21 @@ namespace AOOADFinalAssignment
                                         }
 
                                         // Lijun's 2nd use case - "Generate Payment Due Alert"
-                                        Console.WriteLine("")
+                                        Console.WriteLine("Do you want to generate payment due alerts for this policy?");
+                                        Console.Write("Yes/No : ");
+                                        userInputChoice = Console.ReadLine();
 
+                                        if (userInputChoice == "Yes")
+                                        {
+                                            policiesOwned[policyNum - 1].sendAlert();
+                                            Main();
 
+                                        }
+                                        else if (userInputChoice == "No")
+                                        {
+                                            Console.WriteLine("Brining you back to the menu....");
+                                            Main();
+                                        }
                                     }
                                 }
                             }

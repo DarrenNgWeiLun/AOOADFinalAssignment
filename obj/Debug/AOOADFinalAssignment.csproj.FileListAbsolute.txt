@@ -11,3 +11,10 @@ C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssign
 C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe.config
 C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe
 C:\Users\Haiqel\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.pdb
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe.config
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.exe
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\bin\Debug\AOOADFinalAssignment.pdb
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csprojResolveAssemblyReference.cache
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.csproj.CoreCompileInputs.cache
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.exe
+C:\Users\acehq\Documents\GitHub\AOOADFinalAssignment\obj\Debug\AOOADFinalAssignment.pdb
