@@ -102,7 +102,7 @@ namespace AOOADFinalAssignment
                     Console.WriteLine("Not valid policy Type");
                 }
 
-                Console.WriteLine("Is rider needed?");
+                Console.WriteLine("Is rider needed?(y/n)");
                 char rider = Convert.ToChar(Console.ReadLine().ToUpper());
                 while (rider == 'Y')
                 {
@@ -122,7 +122,7 @@ namespace AOOADFinalAssignment
                     r.PayOutAmount = payOutAmount;
 
                     p.RiderList.Add(r);
-                    Console.WriteLine("Is another rider needed?");
+                    Console.WriteLine("Is another rider needed?(y/n)");
                     rider = Convert.ToChar(Console.ReadLine().ToUpper());
 
                 }

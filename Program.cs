@@ -31,8 +31,8 @@ namespace AOOADFinalAssignment
                 Console.WriteLine("1. View Policies (Lijun) + Edit Policy (Haiqel) + Pay Premium By Cheque (Haiqel) + Send Email Alert for policies with premium due (LiJun)");
                 Console.WriteLine("2. Create New Policy (Darren)");
                 Console.WriteLine("Note : Haiqel's Use Cases 'Edit Policy' and 'Pay Premium by cheque' codes are embedded inside 'Lijun code'");
-
-                if (Convert.ToInt32(Console.ReadLine()) == 1)
+                int opt = Convert.ToInt32(Console.ReadLine());
+                if (opt == 1)
                 {
                     while (true)
                     {
@@ -187,7 +187,7 @@ namespace AOOADFinalAssignment
                         }
                     }
                 }
-                else if (Convert.ToInt32(Console.ReadLine()) == 2)
+                else if (opt == 2)
                 {
                     sampleAgent.createNewPolicy();
                     Console.ReadLine();
