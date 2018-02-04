@@ -45,6 +45,8 @@ namespace AOOADFinalAssignment
             State = activeState;
             RiderList = new List<Rider>();
         }
+
+       
         public void setState(Pstate state)
         {
             this.State = state;

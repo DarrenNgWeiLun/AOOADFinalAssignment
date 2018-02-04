@@ -24,11 +24,11 @@ namespace AOOADFinalAssignment
                 else
                 {
                     // prints the data's column headers
-                    Console.WriteLine("{0:10} {1:10} {2:10} {3:10}", "Policy Number", "T&Cs", "Expiry Date", "Total Premium Cost"); 
+                    Console.WriteLine("{0,10} {1,10} {2,10} {3,10}", "Policy Number", "T&Cs", "Expiry Date", "Total Premium Cost"); 
                    
                     for (int i = 0; i < sampleAgent.PolicyList.Count(); i++)
                     {
-                        Console.WriteLine("{0: 10} {1:10} {2:10} {3:10}", policiesOwned[i].PolicyNum,
+                        Console.WriteLine("{0,10} {1,10} {2,10} {3,10}", policiesOwned[i].PolicyNum,
                             policiesOwned[i].TermsAndConditions, policiesOwned[i].ExpiryDate,
                             policiesOwned[i].TotalPremiumCost);
                     }

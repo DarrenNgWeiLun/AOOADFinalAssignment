@@ -29,11 +29,11 @@ namespace AOOADFinalAssignment
         // Constructor
         public Rider(int riderID,double premiumCost,string premiumType, double payOutAmount,double interestForLatePayment)
         {
-            this.riderID = riderID;
-            this.premiumCost = premiumCost;
-            this.premiumType = premiumType;
-            this.payOutAmount = payOutAmount;
-            this.interestForLatePayment = interestForLatePayment;
+            this.RiderID = riderID;
+            this.PremiumCost = premiumCost;
+            this.PremiumType = premiumType;
+            this.PayOutAmount = payOutAmount;
+            this.InterestForLatePayment = interestForLatePayment;
         }
     }
 }

@@ -38,16 +38,26 @@ namespace AOOADFinalAssignment
                     {
                         // Lijun's Use Case - View Policies 
 
+                        // fake a policy (samplePolicy)
+                        Policy samplePolicy = new Policy();
+                        samplePolicy.PolicyNum = 1;
+                        samplePolicy.TermsAndConditions = "Test";
+                        samplePolicy.ExpiryDate = DateTime.Today.AddYears(2);
+                        samplePolicy.TotalPremiumCost = 2000.00;
+
                         // attrbiutes
                         int policyNum; // the policy that the agent wants to see/edit
                         List<Policy> policiesOwned = sampleAgent.PolicyList;
+
+                        // fake that the agent is looking after a policy
+                        policiesOwned.Add(samplePolicy);
                         string userInputViewPolicies; // var to store if agent wants to view other policies.
                                                       //behaviour
                         sampleAgent.viewPolicy(); // display the policies
                         Console.Write("What is the policy number that you would like to view further? : ");
                         policyNum = Convert.ToInt16(Console.ReadLine());
                         // print the specific policy to ve viewed.
-                        Console.WriteLine("{0: 10} {1:10} {2:10} {3:10}", policiesOwned[policyNum-1].PolicyNum,
+                        Console.WriteLine("{0,10} {1,10} {2,10} {3,10}", policiesOwned[policyNum-1].PolicyNum,
                                 policiesOwned[policyNum-1].TermsAndConditions, policiesOwned[policyNum-1].ExpiryDate,
                                 policiesOwned[policyNum-1].TotalPremiumCost);
 
@@ -72,12 +82,12 @@ namespace AOOADFinalAssignment
 
                             //display the column data headers first
                             Console.WriteLine("These are the riders that this policy has at the moment!");
-                            Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
+                            Console.WriteLine(" {0,10} {1,10} {2,10} {3,10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
 
                             // display a list of riders that the policy has
                             for (int i = 0; i < riderList.Count(); i++)
                             {
-                                Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}",riderList[i].RiderID,riderList[i].PremiumCost,riderList[i].PremiumType,riderList[i].PayOutAmount);
+                                Console.WriteLine(" {0,10} {1,10} {2,10} {3,10}",riderList[i].RiderID,riderList[i].PremiumCost,riderList[i].PremiumType,riderList[i].PayOutAmount);
                             }
                             //prompt agent if agent wants to add an additional rider
 
@@ -96,10 +106,10 @@ namespace AOOADFinalAssignment
 
                                     //display the available riders that can be added to the policy viewed
                                     Console.WriteLine("These are the riders that are avaible to be added!");
-                                    Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
-                                    for (int i = 0; i < riderList.Count(); i++)
+                                    Console.WriteLine(" {0,10} {1,10} {2,10} {3,10}", "RiderID", "Premium Cost", "Premium Type", "Pay Out Amount");
+                                    for (int i = 0; i < globalRiderList.Count(); i++)
                                     {
-                                        Console.WriteLine(" {0:10} {1:10} {2:10} {3:10}", globalRiderList[i].RiderID, globalRiderList[i].PremiumCost, globalRiderList[i].PremiumType,
+                                        Console.WriteLine(" {0,10} {1,10} {2,10} {3,10}", globalRiderList[i].RiderID, globalRiderList[i].PremiumCost, globalRiderList[i].PremiumType,
                                             globalRiderList[i].PayOutAmount);
                                     }
 
@@ -133,7 +143,7 @@ namespace AOOADFinalAssignment
                                             userInputChoice = Console.ReadLine();
 
                                             // Make the policy state from whatever state to active state.
-                                            policiesOwned[policyNum - 1].setState(policiesOwned[policyNum].activeState);
+                                            policiesOwned[policyNum - 1].setState(policiesOwned[policyNum-1].activeState);
 
                                             //Inform the user that the system has ackonowledged that the premiunms has been paid by cheque
                                             Console.WriteLine("The system has successfully recorded that the premiums are paid by cheque");
